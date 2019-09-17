@@ -1,0 +1,10 @@
+version: '3'
+services:
+  lapis:
+    build: ../
+    volumes:
+      - .:/app
+    environment:
+      LAPIS_CODE_CACHE: 'off'
+    ports:
+      - 8080:8080
